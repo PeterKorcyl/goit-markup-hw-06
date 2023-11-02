@@ -392,6 +392,8 @@
       </div>
     </div>
   </footer>
+
+
   <div class="modal-window is-hidden" data-modal>
     <div class="modal-body">
       <button class="close-button" type="button" data-modal-close>
@@ -432,21 +434,20 @@
           <label for="user-comment" class="modal-name">Comment</label>
           <textarea id="user-comment" name="user-comment" placeholder="Text input" class="modal-textarea"></textarea>
         </div>
+
         <div class="checbox">
-          <input type="checkbox" id="user-privacy" value="true" name="user-privacy"
-            class="checkbox-input visually-hidden" required>
+          <input type="checkbox" id="user-privacy" name="user-privacy" value="true"
+            class="visually-hidden checkbox-input" required>
           <label class="checkbox-label" for="user-privacy">
             <span class="checbox-icon">
-              <svg width="10" height="8">
+              <svg width="10" height="8" class="svg-frame">
                 <use href="./images/icons.svg#icon-checbox"></use>
               </svg>
             </span>
             I accept the terms and conditions of the <a href="#" class="policy-link">Privacy Policy</a>
           </label>
         </div>
-        <div>
-          <button type="button" class="modal-button">Send</button>
-        </div>
+        <button type="button" class="modal-button">Send</button>
       </form>
     </div>
   </div>
