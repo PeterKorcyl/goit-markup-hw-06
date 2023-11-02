@@ -207,15 +207,15 @@ img {
 
 .visually-hidden {
   position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .list-goals {
@@ -815,6 +815,13 @@ p {
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
 }
+
+.checkbox-input:checked + .checkbox-label span {
+  background-color: var(--pressed-state-color);
+  border: none;
+  fill: var(--light-color);
+}
+
 .checbox-icon {
   width: 16px;
   height: 16px;
@@ -830,14 +837,7 @@ p {
 .policy-link {
   color: var(--primary-brand-color);
 }
-.svg-frame {
-  fill: var(--light-color);
-}
-.checbox-input:checked + .checkbox-label .checbox-icon {
-  background-color: var(--pressed-state-color);
-  border: none;
-  fill: var(--light-color);
-}
+
 .modal-button {
   display: block;
   margin: 0 auto;
